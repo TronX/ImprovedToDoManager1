@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:layout_marginLeft="5dp">
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/TitleLabel"
+          android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_string"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/title"
+          android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    
+        android:ems="10"
+        android:hint="@string/enter_title_string" 
+        android:inputType="textShortMessage">
+
+    
+    </EditText>
+
+    <!-- Status -->
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="25dp"
+        android:text="@string/status_string"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/statusGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp" >
+
+        <RadioButton
+            android:id="@+id/statusDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/done_string" />
+
+        <RadioButton
+            android:id="@+id/statusNotDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/not_done_string" />
+    </RadioGroup>
+
+    <!-- Priority -->
+
+    <TextView
+        android:id="@+id/priority"
+          android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="@string/priority_string"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/priorityGroup"
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:text="@string/priority_string" >
+
+        <RadioButton
+            android:id="@+id/lowPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/priority_low_string" />
+
+        <RadioButton
+            android:id="@+id/medPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/priority_medium_string" />
+
+        <RadioButton
+            android:id="@+id/highPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/priority_high_string" />
+    </RadioGroup>
+
+    <!-- Time and Date -->
+
+
+    <!-- Buttons -->
+
+    <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+          >
+
+    <Button
+        android:id="@+id/date_picker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:paddingRight="50dp"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_date"
+        android:text="@string/choose_date_string" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+         android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="40dp"
+        android:text="@string/no_date_set_string" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+    
+      <Button
+        android:id="@+id/time_picker_button"
+        android:layout_width="wrap_content"
+        
+        android:layout_height="wrap_content"
+        android:paddingRight="50dp"
+        android:textSize="20sp"
+      
+        android:drawableLeft="@drawable/ic_time"
+        android:text="@string/choose_time_string" />
+    
+       <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        
+        android:paddingLeft="60dp"
+        android:layout_height="wrap_content"
+        android:text="@string/no_time_set_string" />
+    </LinearLayout>
+
+</LinearLayout>

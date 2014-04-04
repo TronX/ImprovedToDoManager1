@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+     <item 
+        
+        android:id="@+id/action_cancel"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:title="@string/action_cancel"
+        android:icon="@drawable/ic_action_reset"
+        
+        />
+     
+     <item 
+        
+        android:id="@+id/action_reset"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:title="@string/action_reset"
+        android:icon="@drawable/ic_action_refresh"
+        
+        
+        />
+     
+      <item 
+        
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:title="@string/action_save"
+        android:icon="@drawable/ic_action_save"
+        
+        
+        />
+     
+    
+     
+     
+
+</menu>
